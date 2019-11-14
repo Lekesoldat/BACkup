@@ -1,0 +1,23 @@
+{
+  "name": "gr1927",
+  "version": "1.0.0",
+  "description": "A project by Magnus L. Holtet, Kristoffer Nyvoll, Liv Elise Herstad and Snorre Kristiansen.",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd frontend && npm install",
+    "start": "concurrently \"cd backend && gradle run\" \"wait-on http://localhost:8080/ && cd frontend && npm start\"",
+    "test-frontend": "cd frontend && npm test",
+    "test-backend": "cd backend && gradle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.stud.idi.ntnu.no/it1901/gr1927/gr1927.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "wait-on": "^3.3.0"
+  }
+}
